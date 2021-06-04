@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3E09B"
+    android:padding="10dp"
+    tools:context=".ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CDDC39">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImage"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_profile"
+                android:layout_width="120dp"
+                android:layout_height="120dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:text="Name"
+                android:id="@+id/nameText"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ic_email"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:id="@+id/emailText"
+                        android:layout_gravity="center_vertical"
+                        android:text="name@gmail.com"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/genderImage"
+                        android:src="@drawable/ic_male"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:id="@+id/genderText"
+                        android:layout_gravity="center_vertical"
+                        android:text="Male"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ic_date"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:id="@+id/dateText"
+                        android:layout_gravity="center_vertical"
+                        android:text="1/1/21"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ic_time"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:id="@+id/timeText"
+                        android:layout_gravity="center_vertical"
+                        android:text="05:29"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ic_blood"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:id="@+id/bloodText"
+                        android:layout_gravity="center_vertical"
+                        android:text="A+"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ic_skills"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:id="@+id/skillText"
+                        android:layout_gravity="center_vertical"
+                        android:text="Bangla English"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

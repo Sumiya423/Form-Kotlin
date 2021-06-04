@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#CDDC39"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#05CAE3">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/pickImage"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_pick_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp">
+
+            </ImageView>
+            <TextView
+                android:text="Pick Image"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/pickName"
+                android:hint="Enter your name"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/pickEmail"
+                android:hint="Enter your email"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Gender"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <RadioGroup
+
+                    android:id="@+id/radioGroup"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:text="Male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:text="Female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </RadioButton>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/pickDate"
+                    android:src="@drawable/ic_date"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="35dp">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/pickTime"
+                    android:src="@drawable/ic_time"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp">
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/pickDateText"
+                    android:text="28/4/21"
+                    android:gravity="center_horizontal"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/pickTimeText"
+                    android:gravity="center_horizontal"
+                    android:text="10.03"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:textSize="20sp"
+                    android:text="Blood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+                <TextView
+                    android:id="@+id/pickBloodText"
+                    android:textSize="20sp"
+                    android:text="A+"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <TextView
+
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:text="Select Preferable Language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:text="Bangla"
+                    android:id="@+id/bangla"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                </CheckBox>
+                <CheckBox
+                    android:id="@+id/english"
+                    android:text="English"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                </CheckBox>
+                <CheckBox
+                    android:id="@+id/arabic"
+                    android:text="Arabic"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                </CheckBox>
+                <CheckBox
+                    android:id="@+id/hindi"
+                    android:text="Hindi"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                </CheckBox>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Submit"
+                android:textColor="#F4E87A"
+                android:background="#154E55"
+                android:layout_width="200dp"
+                android:layout_height="35dp">
+
+            </Button>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

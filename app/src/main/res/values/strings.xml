@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Bite Kotlin Form</string>
+
+    <string-array name="blood_group">
+
+
+        <item>O+</item>
+        <item>A+</item>
+        <item>B+</item>
+        <item>AB+</item>
+        <item>O-</item>
+        <item>A-</item>
+        <item>B-</item>
+        <item>AB-</item>
+
+    </string-array>
+</resources>
